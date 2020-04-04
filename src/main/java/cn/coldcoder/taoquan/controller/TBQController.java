@@ -7,6 +7,7 @@ import cn.coldcoder.taoquan.domain.Page;
 
 import cn.coldcoder.taoquan.domain.Response;
 import cn.coldcoder.taoquan.service.TBQService;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -31,26 +32,23 @@ public class TBQController {
     @RequestMapping(value = "search/prod/{pageNum}/{keyword}",method = RequestMethod.GET)
     public String getOfficalSelected(@PathVariable(value = "keyword") String keyword,
                                      @PathVariable(value = "pageNum") int pageNum){
-//        String result = tbqService.searchBykeyword(keyword,pageNum);
-//        while(StringUtils.equals(StringUtils.substring(result,2,7),"error")){
-//            System.out.println(StringUtils.substring(result,2,7)+"1");
-//            result=tbqService.searchBykeyword(keyword,pageNum);
-//        }
-//       return result;
-        return null;
+        String result = tbqService.searchBykeyword(keyword,pageNum);
+        while(StringUtils.equals(StringUtils.substring(result,2,7),"error")){
+            result=tbqService.searchBykeyword(keyword,pageNum);
+        }
+       return result;
     }
 
     @RequestMapping(value = "get/materialId")
     public List<Material> getMaterialId(){
         List<Material> list = new ArrayList<>();
         list.add(new Material(28027,"综合"));
-        list.add(new Material(27448,"服饰"));
-        list.add(new Material(28028,"数码家电"));
-        list.add(new Material(3758,"家居家装"));
+        list.add(new Material(4093,"服饰"));
+        list.add(new Material(13369,"数码家电"));
+        list.add(new Material(27798,"家居家装"));
         list.add(new Material(3761,"食品"));
-        list.add(new Material(3762,"鞋包配饰"));
         list.add(new Material(3763,"美妆个护"));
-        list.add(new Material(31362,"母婴"));
+        list.add(new Material(27454,"母婴"));
 
         return list;
     }
