@@ -17,7 +17,6 @@ import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
 
 import java.io.UnsupportedEncodingException;
-import java.net.URLDecoder;
 
 /**
  * @Author: DX
@@ -115,7 +114,8 @@ public class TBQServiceImpl implements TBQService {
         }
         System.out.println(taotoken);
 
-        return Response.create(message,taotoken);
+//        return Response.create(message,taotoken);
+        return Response.create("后台暂时","没有信息哟");
 
     }
     public String getProdId(String itemid){

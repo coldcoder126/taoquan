@@ -1,12 +1,12 @@
 package cn.coldcoder.taoquan.controller;
 
 
+import cn.coldcoder.taoquan.domain.Config;
 import cn.coldcoder.taoquan.domain.Material;
 import cn.coldcoder.taoquan.domain.Page;
+
 import cn.coldcoder.taoquan.domain.Response;
 import cn.coldcoder.taoquan.service.TBQService;
-import org.apache.commons.collections4.ListUtils;
-import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,9 +14,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 /**
  * @Author: DX
@@ -33,12 +31,13 @@ public class TBQController {
     @RequestMapping(value = "search/prod/{pageNum}/{keyword}",method = RequestMethod.GET)
     public String getOfficalSelected(@PathVariable(value = "keyword") String keyword,
                                      @PathVariable(value = "pageNum") int pageNum){
-        String result = tbqService.searchBykeyword(keyword,pageNum);
-        while(StringUtils.equals(StringUtils.substring(result,2,7),"error")){
-            System.out.println(StringUtils.substring(result,2,7)+"1");
-            result=tbqService.searchBykeyword(keyword,pageNum);
-        }
-       return result;
+//        String result = tbqService.searchBykeyword(keyword,pageNum);
+//        while(StringUtils.equals(StringUtils.substring(result,2,7),"error")){
+//            System.out.println(StringUtils.substring(result,2,7)+"1");
+//            result=tbqService.searchBykeyword(keyword,pageNum);
+//        }
+//       return result;
+        return null;
     }
 
     @RequestMapping(value = "get/materialId")
@@ -53,7 +52,6 @@ public class TBQController {
         list.add(new Material(3763,"美妆个护"));
         list.add(new Material(31362,"母婴"));
 
-
         return list;
     }
 
@@ -61,14 +59,12 @@ public class TBQController {
     @RequestMapping(value = "get/officalselected/{pageNum}/{materialId}")
     public String getOfficalSelected(@PathVariable(value = "pageNum") int pageNum,
                                      @PathVariable(value = "materialId") int materialId){
+
         return tbqService.getOfficalSelected(pageNum,materialId);
     }
 
     @RequestMapping(value = "get/taotoken/{url}")
     public Response getTaoToken(@PathVariable(value = "url") String url){
-        System.out.println("请求进入");
-        System.out.println(url);
-
         return tbqService.getTaoToken(url);
 
     }
@@ -106,5 +102,13 @@ public class TBQController {
         String page2_img3="//img.alicdn.com/i3/720250651/O1CN01xyagpO1GgCMYBIAmf_!!720250651.jpg";
         String page2_img4="//img.alicdn.com/i3/720250651/O1CN010ozvTu1GgCLqcmbXo_!!720250651.jpg";
         return Page.creat(page2_img1,page2_img2,page2_img3,page2_img4);
+    }
+
+    @RequestMapping(value = "get/config")
+    public Config getConfig(){
+        Config conf = new Config();
+        conf.setType_icon1("/static/images/pdd.png");
+        conf.setType_icon2("/static/images/jd.png");
+        return conf;
     }
 }
