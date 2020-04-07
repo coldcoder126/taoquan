@@ -16,8 +16,9 @@ public interface TBQService {
 
     Response getTaoToken(String url);
 
-    public String getProdId(String itemid);
+    String getProdId(String itemid);
 
+    String getFavoriteList();
 
 
 

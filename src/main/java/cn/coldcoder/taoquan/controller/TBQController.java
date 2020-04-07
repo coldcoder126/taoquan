@@ -9,6 +9,7 @@ import cn.coldcoder.taoquan.domain.Response;
 import cn.coldcoder.taoquan.service.TBQService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -41,7 +42,10 @@ public class TBQController {
 
     @RequestMapping(value = "get/materialId")
     public List<Material> getMaterialId(){
+
         List<Material> list = new ArrayList<>();
+
+        Material material1 = new Material();
         list.add(new Material(28027,"综合"));
         list.add(new Material(4093,"服饰"));
         list.add(new Material(13369,"数码家电"));
@@ -105,8 +109,8 @@ public class TBQController {
     @RequestMapping(value = "get/config")
     public Config getConfig(){
         Config conf = new Config();
-        conf.setType_icon1("/static/images/pdd.png");
-        conf.setType_icon2("/static/images/jd.png");
+        conf.setType_icon1("/static/images/tianmao.png");
+        conf.setType_icon2("/static/images/taobao.png");
         return conf;
     }
 }

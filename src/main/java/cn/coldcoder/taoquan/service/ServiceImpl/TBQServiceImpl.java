@@ -114,8 +114,8 @@ public class TBQServiceImpl implements TBQService {
         }
         System.out.println(taotoken);
 
-//        return Response.create(message,taotoken);
-        return Response.create("后台暂时","没有信息哟");
+        return Response.create(message,taotoken);
+       // return Response.create("后台暂时","没有信息哟");
 
     }
     public String getProdId(String itemid){
@@ -132,6 +132,11 @@ public class TBQServiceImpl implements TBQService {
         }
         System.out.println(rsp.getBody());
         return rsp.getBody();
+    }
+
+    @Override
+    public String getFavoriteList() {
+        return null;
     }
 
 

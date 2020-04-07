@@ -28,7 +28,8 @@ public class Response implements Serializable {
         this.message = message;
     }
 
-    public static Response create(String msg,Object data){
+
+    public static Response create(String msg, Object data){
         Response response = new Response();
         response.setMessage(msg);
         response.setData(data);
