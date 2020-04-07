@@ -108,9 +108,20 @@ public class TBQController {
 
     @RequestMapping(value = "get/config")
     public Config getConfig(){
+        List<String> share_title_list = new ArrayList<>();
+        share_title_list.add("这个太便宜，只要");
+        share_title_list.add("图里这个只要");
+        share_title_list.add("分享给你看看，只要");
+        share_title_list.add("不是好货不分享，仅售");
+        share_title_list.add("买它！只要");
+        share_title_list.add("好物不贵");
+        share_title_list.add("领券仅需");
+
         Config conf = new Config();
-        conf.setType_icon1("/static/images/tianmao.png");
-        conf.setType_icon2("/static/images/taobao.png");
+        conf.setType_icon1("/static/images/jd.png");
+        conf.setType_icon2("/static/images/pdd.png");
+        conf.setIndex_share_title("芝麻领惠，先领券再买更实惠");
+        conf.setDetail_share_title(share_title_list);
         return conf;
     }
 }

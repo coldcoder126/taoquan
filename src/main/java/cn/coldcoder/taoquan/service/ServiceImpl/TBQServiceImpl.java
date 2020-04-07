@@ -76,7 +76,7 @@ public class TBQServiceImpl implements TBQService {
     public Response getTaoToken(String dest_url) {
         int count = 0;
         String taotoken = "";
-        String message = "出错啦";
+        String message = "这个暂时没有哟";
         TaobaoClient client = new DefaultTaobaoClient(url, appkey, secret);
         try {
             dest_url="https:"+java.net.URLDecoder.decode(dest_url, "UTF-8");
@@ -114,8 +114,8 @@ public class TBQServiceImpl implements TBQService {
         }
         System.out.println(taotoken);
 
-        return Response.create(message,taotoken);
-       // return Response.create("后台暂时","没有信息哟");
+//        return Response.create(message,taotoken);
+        return Response.create("后台暂时","没有信息哟");
 
     }
     public String getProdId(String itemid){
