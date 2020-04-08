@@ -79,10 +79,12 @@ public class TBQController {
     @RequestMapping(value = "get/banners")
     public List<String> getBanners(){
         List<String> list= new ArrayList<String>();
-        String banner1 = "https://coldcoder.oss-cn-beijing.aliyuncs.com/taoquan/banner/start.png";
-        String banner2 = "https://coldcoder.oss-cn-beijing.aliyuncs.com/taoquan/banner/banner1.png";
+        String banner1 = "//img.alicdn.com/i1/2201188731272/O1CN010dPWX61LGcLysrN9d_!!2201188731272.jpg";
+        String banner2 = "//img.alicdn.com/i1/2201188731272/O1CN01hyjchT1LGcM2CPSqP_!!2201188731272.jpg";
+        String banner3 = "//img.alicdn.com/i3/2201188731272/O1CN01gc5MwC1LGcM0SrOhi_!!2201188731272.jpg";
         list.add(banner1);
         list.add(banner2);
+        list.add(banner3);
         return list;
     }
 
@@ -116,8 +118,8 @@ public class TBQController {
         share_title_list.add("领券仅需");
 
         Config conf = new Config();
-        conf.setType_icon1("/static/images/tianmao.png");
-        conf.setType_icon2("/static/images/taobao.png");
+        conf.setType_icon1("/static/images/jd.png");
+        conf.setType_icon2("/static/images/pdd.png");
         conf.setIndex_share_title("芝麻领惠，先领券再买更实惠");
         conf.setDetail_share_title(share_title_list);
         return conf;
