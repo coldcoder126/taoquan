@@ -1,18 +1,36 @@
 package cn.coldcoder.taoquan.domain;
 
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.stereotype.Component;
+
+import java.util.ArrayList;
 import java.util.List;
 
 /**
  * @Author: DX
- * @Description:
+ * @Description: 配置文件
  * @Date: 2020/4/4 17:54
  * @Version: 1.0
  */
-public class Config {
+@ConfigurationProperties(prefix = "tqconfig")
+@Component
+public class TQConfig {
+    //显示商品图标的类型
     private String type_icon1;
     private String type_icon2;
+
+    //商品详情分享时的title
     private List<String> detail_share_title;
+
+    //首页被分享时候的title
     private String index_share_title;
+
+    //物料id及其描述
+    private List<Material> materials;
+
+    //banner及其对应guideimages
+    private List<Banner> banners;
+
 
 
     public String getType_icon1() {
@@ -45,5 +63,21 @@ public class Config {
 
     public void setIndex_share_title(String index_share_title) {
         this.index_share_title = index_share_title;
+    }
+
+    public List<Banner> getBanners() {
+        return banners;
+    }
+
+    public void setBanners(List<Banner> banners) {
+        this.banners = banners;
+    }
+
+    public List<Material> getMaterials() {
+        return materials;
+    }
+
+    public void setMaterials(List<Material> materials) {
+        this.materials = materials;
     }
 }
