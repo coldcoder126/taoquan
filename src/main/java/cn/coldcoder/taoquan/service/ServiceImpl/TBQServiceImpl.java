@@ -50,7 +50,6 @@ public class TBQServiceImpl implements TBQService {
         } catch (ApiException e) {
             e.printStackTrace();
         }
-        System.out.println("service");
         return rsp.getBody();
     }
 
@@ -68,7 +67,6 @@ public class TBQServiceImpl implements TBQService {
         } catch (ApiException e) {
             e.printStackTrace();
         }
-        System.out.println(rsp.getBody());
         return rsp.getBody();
     }
 
@@ -80,8 +78,6 @@ public class TBQServiceImpl implements TBQService {
         TaobaoClient client = new DefaultTaobaoClient(url, appkey, secret);
         try {
             dest_url="https:"+java.net.URLDecoder.decode(dest_url, "UTF-8");
-            System.out.println("new url");
-            System.out.println(dest_url);
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }
@@ -112,16 +108,14 @@ public class TBQServiceImpl implements TBQService {
             message = "请复制这段文本，然后打开淘宝手机客户端：";
             taotoken = "￥"+StringUtils.substringBetween(rsp.getBody().toString(),"￥","￥")+"￥";
         }
-        System.out.println(taotoken);
 
-//        return Response.create(message,taotoken);
-        return Response.create("后台暂时","没有信息哟");
+        return Response.create(message,taotoken);
+//        return Response.create("后台暂时","没有信息哟");
 
     }
     public String getProdId(String itemid){
         TaobaoClient client = new DefaultTaobaoClient(url, appkey, secret);
         TbkCouponGetRequest req = new TbkCouponGetRequest();
-        //req.setMe("nfr%2BYTo2k1PX18gaNN%2BIPkIG2PadNYbBnwEsv6mRavWieOoOE3L9OdmbDSSyHbGxBAXjHpLKvZbL1320ML%2BCF5FRtW7N7yJ056Lgym4X01A%3D");
         req.setItemId(Long.parseLong("566932908065"));
         req.setActivityId("8d7b699d4e5b4a3494a7b98674a875a1");
         TbkCouponGetResponse rsp = null;
@@ -130,7 +124,6 @@ public class TBQServiceImpl implements TBQService {
         } catch (ApiException e) {
             e.printStackTrace();
         }
-        System.out.println(rsp.getBody());
         return rsp.getBody();
     }
 

@@ -1,6 +1,13 @@
 server:
   port: 8080
 
+
+logging:
+  config: 'classpath:logback-spring.xml'
+  file:
+    path: logs
+
+
 tqconfig:
   type_icon1: /static/images/pdd.png
   type_icon2: /static/images/pdd.png
