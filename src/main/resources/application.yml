@@ -1,13 +1,6 @@
 server:
   port: 8080
 
-
-logging:
-  config: 'classpath:logback-spring.xml'
-  file:
-    path: logs
-
-
 tqconfig:
   type_icon1: /static/images/pdd.png
   type_icon2: /static/images/pdd.png
@@ -21,22 +14,22 @@ tqconfig:
     - 领券仅需
   index_share_title: 芝麻领惠，先领券再买更实惠
   materials:
-    - id: 28027
+    - id: 7792
       description: 综合
-    - id: 3761
+    - id: 7853
       description: 食品
-    - id: 3763
+    - id: 7787
       description: 美妆个护
     - id: 28029
       description: 服饰
-    - id: 28028
+    - id: 9645
       description: 数码家电
-    - id: 27798
-      description: 家居家装
+    - id: 4518
+      description: 居家小物
     - id: 27454
       description: 母婴
   banners:
-    - banner: '//img.alicdn.com/i1/2201188731272/O1CN010dPWX61LGcLysrN9d_!!2201188731272.jpg'
+    - banner: 'https://coldcoder.oss-cn-beijing.aliyuncs.com/taoquan/banner/banner1.png'
       guide_imgs:
         - '//img.alicdn.com/i3/1030582371/O1CN015BY3x01TNxfA8kJgB_!!1030582371.jpg'
         - '//img.alicdn.com/i1/1030582371/O1CN01yyvgae1TNxf6kYHpH_!!1030582371.jpg'
@@ -44,6 +37,6 @@ tqconfig:
         - '//img.alicdn.com/i3/1030582371/O1CN017ZnNoo1TNxf1UM6Ct_!!1030582371.jpg'
     - banner: '//img.alicdn.com/i1/2201188731272/O1CN01hyjchT1LGcM2CPSqP_!!2201188731272.jpg'
       guide_imgs:
-        - '//img.alicdn.com/i3/720250651/O1CN01wLCZ5J1GgCLop4jDr_!!720250651.jpg'
+        - 'https://coldcoder.oss-cn-beijing.aliyuncs.com/taoquan/banner/start.png'
         - '//img.alicdn.com/i2/720250651/TB2pznWbYGYBuNjy0FoXXciBFXa_!!720250651.png'
         - '//img.alicdn.com/i3/720250651/O1CN01xyagpO1GgCMYBIAmf_!!720250651.jpg'
