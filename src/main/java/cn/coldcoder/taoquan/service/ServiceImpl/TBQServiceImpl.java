@@ -109,8 +109,8 @@ public class TBQServiceImpl implements TBQService {
             taotoken = "￥"+StringUtils.substringBetween(rsp.getBody().toString(),"￥","￥")+"￥";
         }
 
-//        return Response.create(message,taotoken);
-        return Response.create("后台暂时","没有信息哟");
+        return Response.create(message,taotoken);
+//        return Response.create("后台暂时","没有信息哟");
 
     }
     public String getProdId(String itemid){

@@ -2,8 +2,8 @@ server:
   port: 8080
 
 tqconfig:
-  type_icon1: /static/images/pdd.png
-  type_icon2: /static/images/jd.png
+  type_icon1: /static/images/tianmao.png
+  type_icon2: /static/images/taobao.png
   detail_share_title:
     - 这个太便宜，只要
     - 图里这个只要
@@ -36,5 +36,11 @@ tqconfig:
         - 'https://coldcoder.oss-cn-beijing.aliyuncs.com/taoquan/banner/use3.jpg'
     - banner: 'https://coldcoder.oss-cn-beijing.aliyuncs.com/taoquan/banner/start.png'
       guide_imgs:
-        - 'https://coldcoder.oss-cn-beijing.aliyuncs.com/taoquan/banner/use1.jpg'
-        - 'https://coldcoder.oss-cn-beijing.aliyuncs.com/taoquan/banner/use2.jpg'
+        - 'https://coldcoder.oss-cn-beijing.aliyuncs.com/taoquan/banner/guide1.jpg'
+        - 'https://coldcoder.oss-cn-beijing.aliyuncs.com/taoquan/banner/guide2.jpg'
+        - 'https://coldcoder.oss-cn-beijing.aliyuncs.com/taoquan/banner/guide3.jpg'
+        - 'https://coldcoder.oss-cn-beijing.aliyuncs.com/taoquan/banner/guide4.jpg'
+        - 'https://coldcoder.oss-cn-beijing.aliyuncs.com/taoquan/banner/guide5.jpg'
+        - 'https://coldcoder.oss-cn-beijing.aliyuncs.com/taoquan/banner/guide6.jpg'
+        - 'https://coldcoder.oss-cn-beijing.aliyuncs.com/taoquan/banner/guide7.jpg'
+        - 'https://coldcoder.oss-cn-beijing.aliyuncs.com/taoquan/banner/guide8.jpg'
