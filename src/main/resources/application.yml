@@ -14,7 +14,7 @@ tqconfig:
     - 领券仅需
   index_share_title: 芝麻领惠，先领券再买更实惠
   materials:
-    - id: 31362
+    - id: 27446
       description: 热卖
     - id: 27451
       description: 食品
