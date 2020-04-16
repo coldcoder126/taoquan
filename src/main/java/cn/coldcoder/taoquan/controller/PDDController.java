@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @Version: 1.0
  */
 @RestController
-@RequestMapping(value = "pdd/")
+@RequestMapping(value = "zmlh/pdd/")
 public class PDDController {
     @Autowired
     private PDDService pddService;

@@ -24,7 +24,7 @@ import java.util.List;
  * @Version: 1.0
  */
 @RestController
-@RequestMapping(value = "taobao")
+@RequestMapping(value = "zmlh/taobao/")
 public class TBQController {
     @Autowired
     private TBQService tbqService;
