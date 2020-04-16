@@ -20,19 +20,19 @@ tqconfig:
       description: 食品
     - id: 28029
       description: 服饰
-    - id: 7785
-      description: 鞋包
+    - id: 9638
+      description: 鞋包饰品
     - id: 8169
       description: 睡衣内衣
-    - id: 965
+    - id: 9645
       description: 家电
-    - id: 8871
+    - id: 3760
       description: 母婴
   recommends:
-    - id: 28029
+    - id: 28027
       description: 精选
       path: '/static/images/jingxuan.png'
-    - id: 7784
+    - id: 3761
       description: 零食
       path: '/static/images/lingshi.png'
     - id: 9646
@@ -41,16 +41,11 @@ tqconfig:
     - id: 8040
       description: 个护
       path: '/static/images/gehu.png'
-    - id: 8170
+    - id: 9641
       description: 运动
       path: '/static/images/yundong.png'
   banners:
-    - banner: 'https://coldcoder.oss-cn-beijing.aliyuncs.com/taoquan/banner/banner1.png'
-      guide_imgs:
-        - 'https://coldcoder.oss-cn-beijing.aliyuncs.com/taoquan/banner/use1.jpg'
-        - 'https://coldcoder.oss-cn-beijing.aliyuncs.com/taoquan/banner/use2.jpg'
-        - 'https://coldcoder.oss-cn-beijing.aliyuncs.com/taoquan/banner/use3.jpg'
-    - banner: 'https://coldcoder.oss-cn-beijing.aliyuncs.com/taoquan/banner/start.png'
+    - banner: 'https://coldcoder.oss-cn-beijing.aliyuncs.com/taoquan/banner/tb_banner1.png'
       guide_imgs:
         - 'https://coldcoder.oss-cn-beijing.aliyuncs.com/taoquan/banner/guide1.jpg'
         - 'https://coldcoder.oss-cn-beijing.aliyuncs.com/taoquan/banner/guide2.jpg'
@@ -61,12 +56,7 @@ tqconfig:
         - 'https://coldcoder.oss-cn-beijing.aliyuncs.com/taoquan/banner/guide7.jpg'
         - 'https://coldcoder.oss-cn-beijing.aliyuncs.com/taoquan/banner/guide8.jpg'
   pdd_banners:
-    - banner: 'https://coldcoder.oss-cn-beijing.aliyuncs.com/taoquan/banner/banner1.png'
+    - banner: 'https://coldcoder.oss-cn-beijing.aliyuncs.com/taoquan/banner/pdd_banner1.png'
       guide_imgs:
-        - 'https://coldcoder.oss-cn-beijing.aliyuncs.com/taoquan/banner/use1.jpg'
-        - 'https://coldcoder.oss-cn-beijing.aliyuncs.com/taoquan/banner/use2.jpg'
-        - 'https://coldcoder.oss-cn-beijing.aliyuncs.com/taoquan/banner/use3.jpg'
-    - banner: 'https://coldcoder.oss-cn-beijing.aliyuncs.com/taoquan/banner/start.png'
-      guide_imgs:
-        - 'https://coldcoder.oss-cn-beijing.aliyuncs.com/taoquan/banner/guide1.jpg'
-        - 'https://coldcoder.oss-cn-beijing.aliyuncs.com/taoquan/banner/guide2.jpg'
+        - 'https://coldcoder.oss-cn-beijing.aliyuncs.com/taoquan/banner/pdd_guide1.jpg'
+        - 'https://coldcoder.oss-cn-beijing.aliyuncs.com/taoquan/banner/pdd_guide2.jpg'
