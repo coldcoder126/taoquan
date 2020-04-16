@@ -24,7 +24,7 @@ import java.util.List;
  * @Version: 1.0
  */
 @RestController
-@RequestMapping(value = "taoquan")
+@RequestMapping(value = "taobao")
 public class TBQController {
     @Autowired
     private TBQService tbqService;
@@ -32,8 +32,8 @@ public class TBQController {
     private TQConfig tqConfig;
 
     @RequestMapping(value = "search/prod/{pageNum}/{keyword}",method = RequestMethod.GET)
-    public String getOfficalSelected(@PathVariable(value = "keyword") String keyword,
-                                     @PathVariable(value = "pageNum") int pageNum){
+    public String searchProd(@PathVariable(value = "keyword") String keyword,
+                             @PathVariable(value = "pageNum") int pageNum){
         String result = tbqService.searchBykeyword(keyword,pageNum);
         while(StringUtils.equals(StringUtils.substring(result,2,7),"error")){
             result=tbqService.searchBykeyword(keyword,pageNum);

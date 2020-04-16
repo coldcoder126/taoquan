@@ -18,6 +18,7 @@
 		<java.version>1.8</java.version>
 		<long3.version>3.9</long3.version>
         <taobao-api.version>1.0</taobao-api.version>
+		<pdd-api.version>1.6.1</pdd-api.version>
 	</properties>
 
 	<dependencies>
@@ -49,6 +50,13 @@
 			<scope>system</scope>
             <version>${taobao-api.version}</version>
 			<systemPath>${basedir}/lib/taobao-sdk-java-auto.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>com.taobao</groupId>
+			<artifactId>pdd-api</artifactId>
+			<scope>system</scope>
+			<version>${pdd-api.version}</version>
+			<systemPath>${basedir}/lib/pop-sdk-1.6.1-all.jar</systemPath>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->

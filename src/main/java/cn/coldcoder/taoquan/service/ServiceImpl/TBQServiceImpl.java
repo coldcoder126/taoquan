@@ -39,7 +39,7 @@ public class TBQServiceImpl implements TBQService {
         req.setPageSize(20L);
         req.setPageNo(Long.parseLong(String.valueOf(pageNum)));
         req.setPlatform(2L);
-        req.setStartTkRate(100L);
+        req.setStartTkRate(0L);
         req.setHasCoupon(true);
         req.setSort("total_sales");
         req.setQ(keyword);

@@ -28,9 +28,14 @@ public class TQConfig {
     //物料id及其描述
     private List<Material> materials;
 
+    //推荐位对应的内容及其id
+    private List<Material> recommends;
+
     //banner及其对应guideimages
     private List<Banner> banners;
 
+    //拼多多Banner及其guideimages
+    private List<Banner> pdd_banners;
 
 
     public String getType_icon1() {
@@ -79,5 +84,21 @@ public class TQConfig {
 
     public void setMaterials(List<Material> materials) {
         this.materials = materials;
+    }
+
+    public List<Material> getRecommends() {
+        return recommends;
+    }
+
+    public void setRecommends(List<Material> recommends) {
+        this.recommends = recommends;
+    }
+
+    public List<Banner> getPdd_banners() {
+        return pdd_banners;
+    }
+
+    public void setPdd_banners(List<Banner> pdd_banners) {
+        this.pdd_banners = pdd_banners;
     }
 }

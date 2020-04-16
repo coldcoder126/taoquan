@@ -9,6 +9,7 @@ package cn.coldcoder.taoquan.domain;
 public class Material {
     private int id;
     private String description;
+    private String path;
 
     public int getId() {
         return id;
@@ -26,11 +27,11 @@ public class Material {
         this.description = description;
     }
 
-    public Material() {
+    public String getPath() {
+        return path;
     }
 
-    public Material(int id, String description) {
-        this.id = id;
-        this.description = description;
+    public void setPath(String path) {
+        this.path = path;
     }
 }

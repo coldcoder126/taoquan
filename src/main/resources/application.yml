@@ -14,20 +14,36 @@ tqconfig:
     - 领券仅需
   index_share_title: 芝麻领惠，先领券再买更实惠
   materials:
-    - id: 27446
+    - id: 28028
       description: 热卖
     - id: 27451
       description: 食品
-    - id: 3763
-      description: 美妆个护
-    - id: 4092
+    - id: 28029
       description: 服饰
-    - id: 9645
-      description: 数码家电
-    - id: 27798
-      description: 家居日用
-    - id: 27454
+    - id: 7785
+      description: 鞋包
+    - id: 8169
+      description: 睡衣内衣
+    - id: 965
+      description: 家电
+    - id: 8871
       description: 母婴
+  recommends:
+    - id: 28029
+      description: 精选
+      path: '/static/images/jingxuan.png'
+    - id: 7784
+      description: 零食
+      path: '/static/images/lingshi.png'
+    - id: 9646
+      description: 女装
+      path: '/static/images/nvzhuang.png'
+    - id: 8040
+      description: 个护
+      path: '/static/images/gehu.png'
+    - id: 8170
+      description: 运动
+      path: '/static/images/yundong.png'
   banners:
     - banner: 'https://coldcoder.oss-cn-beijing.aliyuncs.com/taoquan/banner/banner1.png'
       guide_imgs:
@@ -44,3 +60,13 @@ tqconfig:
         - 'https://coldcoder.oss-cn-beijing.aliyuncs.com/taoquan/banner/guide6.jpg'
         - 'https://coldcoder.oss-cn-beijing.aliyuncs.com/taoquan/banner/guide7.jpg'
         - 'https://coldcoder.oss-cn-beijing.aliyuncs.com/taoquan/banner/guide8.jpg'
+  pdd_banners:
+    - banner: 'https://coldcoder.oss-cn-beijing.aliyuncs.com/taoquan/banner/banner1.png'
+      guide_imgs:
+        - 'https://coldcoder.oss-cn-beijing.aliyuncs.com/taoquan/banner/use1.jpg'
+        - 'https://coldcoder.oss-cn-beijing.aliyuncs.com/taoquan/banner/use2.jpg'
+        - 'https://coldcoder.oss-cn-beijing.aliyuncs.com/taoquan/banner/use3.jpg'
+    - banner: 'https://coldcoder.oss-cn-beijing.aliyuncs.com/taoquan/banner/start.png'
+      guide_imgs:
+        - 'https://coldcoder.oss-cn-beijing.aliyuncs.com/taoquan/banner/guide1.jpg'
+        - 'https://coldcoder.oss-cn-beijing.aliyuncs.com/taoquan/banner/guide2.jpg'
